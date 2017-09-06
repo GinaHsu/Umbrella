@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:elevation="@dimen/cardview_default_elevation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/default_padding"
+    android:layout_marginTop="@dimen/default_margin">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/default_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/weather_condition_day_title"
+            android:drawableBottom="@color/forecast_card_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/forecast_card_divider" />
+
+        <GridLayout
+            android:id="@+id/current_weather_condition_hour_list"
+            android:columnCount="4"
+            android:rowCount="6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

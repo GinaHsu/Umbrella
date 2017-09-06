@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Umbrella</string>
+    <string name="action_setting">Settings</string>
+    <string name="error_message">Failed to load Weather data!</string>
+    <string name="default_weather_condition_text">Clear</string>
+
+
+    <!-- - - - - - - - - - - -->
+    <!--Used by Preferences  -->
+    <!-- - - - - - - - - - - -->
+
+    <!-- Label for the location preference [CHAR LIMIT=30] -->
+    <string name="pref_location_label">Zip Code</string>
+    <!-- Key name for storing location in SharedPreferences [CHAR LIMIT=NONE] -->
+    <string name="pref_location_key" translatable="false">zip</string>
+
+    <!-- Default postal code for location preference [CHAR LIMIT=NONE] -->
+    <string name="pref_location_default" translatable="false">94583</string>
+
+    <!-- Label for the temperature units preference [CHAR LIMIT=30] -->
+    <string name="pref_units_label">Temperature Units</string>
+    <!-- Label for fahrenheit option in temperature unit preference [CHAR LIMIT=25] -->
+    <string name="pref_units_label_fahrenheit">Fahrenheit</string>
+    <!-- Label for celsius option in temperature unit preference [CHAR LIMIT=25] -->
+    <string name="pref_units_label_celsius">Celsius</string>
+
+    <!-- Key name for temperature unit preference in SharedPreferences [CHAR LIMIT=NONE] -->
+    <string name="pref_units_key" translatable="false">units</string>
+
+    <!-- Value in SharedPreferences for fahrenheit temperature unit option [CHAR LIMIT=NONE] -->
+    <string name="pref_units_fahrenheit" translatable="false">Fahrenheit</string>
+    <!-- Value in SharedPreferences for celsius temperature unit option [CHAR LIMIT=NONE] -->
+    <string name="pref_units_celsius" translatable="false">Celsius</string>
+
+</resources>
