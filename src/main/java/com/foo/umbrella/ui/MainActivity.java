@@ -3,7 +3,6 @@ package com.foo.umbrella.ui;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.drawable.ColorDrawable;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -15,7 +14,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.GridLayout;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -25,7 +23,6 @@ import com.foo.umbrella.data.SharePreferences;
 import com.foo.umbrella.data.model.CurrentObservation;
 import com.foo.umbrella.data.model.ForecastCondition;
 import com.foo.umbrella.data.model.WeatherData;
-import com.squareup.picasso.Picasso;
 
 import org.threeten.bp.LocalDate;
 import org.threeten.bp.LocalDateTime;
@@ -104,6 +101,9 @@ public class MainActivity extends AppCompatActivity implements
     CurrentObservation currentObservation = data.getCurrentObservation();
 
     actionBar.setTitle(currentObservation.getDisplayLocation().getFullName());
+    actionBar.setElevation(0.0f);
+
+
 
     int currentTempFahrenheit = new Double(currentObservation.getTempFahrenheit()).intValue();
 
